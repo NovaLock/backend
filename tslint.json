@@ -1,0 +1,13 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended",
+    "tslint-consistent-codestyle",
+    "tslint-eslint-rules"
+  ],
+  "jsRules": {},
+  "rules": {
+    "no-floating-promises": true
+  },
+  "rulesDirectory": []
+}
