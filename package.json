@@ -36,9 +36,9 @@
   "scripts": {
     "test": "nyc mocha",
     "test-cov": "nyc -r lcovonly mocha",
-    "postinstall": "tsc",
+    "postinstall": "tsc && echo [] > store.json",
     "pretest": "tsc",
-    "dev": "supervisor -w . -e js,json server",
+    "dev": "supervisor -w . -e js,json server | pino",
     "prestart": "tsc",
     "start": "node server"
   }
